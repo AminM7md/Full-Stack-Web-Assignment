@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>
+        Yummy
+    </title>
+    <link rel="shortcut icon" href="assets/logo.png" type="image/x-icon">
+    <link rel="stylesheet" href="Css/style.css">
+    <link rel="stylesheet" href="Css/bootstrap.min.css">
+    <link rel="stylesheet" href="Css/bootstrap-icons-1.11.3/font/bootstrap-icons.min.css">
+</head>
+<body class="bg-black">
+    
+    <div class="SideBar min-vh-100 position-fixed d-flex top-0">
+        <div class="Tabs bg-black  d-flex flex-column justify-content-between min-vh-100 p-4">
+            <div class="links">
+                <ul class="list-unstyled overflow-hidden text-light">
+                    <li onclick="showSearchInputs(); closeSideNav()" class="py-2 position-relative cursor-pointer">Search</li>
+                    <li onclick="getCategories(); closeSideNav()" class="py-2 position-relative cursor-pointer">Categories</li>
+                    <li onclick="getArea(); closeSideNav()" class="py-2 position-relative cursor-pointer">Area</li>
+                    <li onclick="getIngredients(); closeSideNav()" class="py-2 position-relative cursor-pointer">Ingredients</li>
+                    <li onclick="showContacts(); closeSideNav()" class="py-2 position-relative cursor-pointer">Contact Us</li>
+                </ul>
+            </div>
+            <div class="SideBarFooter">
+                <div class="icons text-light">
+                    <i class="bi bi-facebook"></i>
+                    <i class="bi bi-twitter"></i>
+                    <i class="bi bi-globe"></i>
+                </div>
+                <div class="footer text-light">
+                    <p>Copyright Â© 2019 All Rights <br>Reserved.</p>
+                </div>
+            </div>
+        </div>
+        <div class="SideBaarHeader d-flex flex-column justify-content-between py-4 text-center px-2 bg-white text-black">
+            <img class="logo" src="assets/logo.png" alt="" srcset="">
+            <i class="IconUseing bi bi-x fa-align-justify fa-2x fs-1"></i>
+            <div>
+                <i class="bi bi-globe d-block"></i>
+                <i class="bi bi-share"></i>
+            </div>
+        </div>
+    </div>
+
+    <div class="container w-75" id="Search">
+       
+    </div>
+
+    <div class="min-vh-100 position-relative">
+        <div class="LoadingScreen2 top-0 start-0 end-0 bottom-0 justify-content-center align-items-center">
+            <span class="loader"></span>
+        </div>
+        
+    
+        <div class="container">
+            <div class="row py-5 g-4 " id="displayData">
+                
+            </div>
+        </div>
+    </div>
+    
+    <script src="JS/jquery-3.7.1.min.js"></script>
+    <script src="JS/bootstrap.bundle.min.js"></script>
+    <script src="JS/main.js"></script>
+</body>
+</html>
